@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<database name="htmlit" schema="keywordtableit" type="MySQL - 5.7.28">
+   <tables>
+      <table catalog="keywordtableit" name="DISTINCT" numRows="0" remarks="A table which name is a keyword" type="TABLE">
+         <column autoUpdated="true" defaultValue="null" digits="0" id="0" name="did" nullable="false" remarks="" size="10" type="INT" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="name" nullable="false" remarks="" size="16" type="VARCHAR" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="false" remarks="" size="80" type="VARCHAR" typeCode="12"/>
+         <primaryKey column="did" sequenceNumberInPK="1"/>
+         <index name="PRIMARY" unique="true">
+            <column ascending="true" name="did"/>
+         </index>
+         <index name="name_unique" unique="true">
+            <column ascending="true" name="name"/>
+         </index>
+      </table>
+   </tables>
+</database>

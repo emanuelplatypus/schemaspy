@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.schemaspy.output.dot.schemaspy.DotNodeIT
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.838 s - in org.schemaspy.output.dot.schemaspy.DotNodeIT

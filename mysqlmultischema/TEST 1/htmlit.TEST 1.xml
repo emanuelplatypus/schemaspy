@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<database name="htmlit" schema="TEST 1" type="MySQL - 5.7.28">
+   <tables>
+      <table catalog="TEST 1" name="LINKS 1" numRows="0" remarks="" type="TABLE">
+         <column autoUpdated="true" defaultValue="null" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="INT" typeCode="4">
+            <child catalog="TEST 1" column="link id" foreignKey="link fk" implied="false" onDeleteCascade="false" table="TABLE 1"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="url" nullable="false" remarks="" size="16" type="VARCHAR" typeCode="12"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="PRIMARY" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+         <index name="url_unique" unique="true">
+            <column ascending="true" name="url"/>
+         </index>
+      </table>
+      <table catalog="TEST 1" name="TABLE 1" numRows="0" remarks="" type="TABLE">
+         <column autoUpdated="true" defaultValue="null" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="INT" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="name" nullable="false" remarks="" size="16" type="VARCHAR" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="link id" nullable="false" remarks="" size="10" type="INT" typeCode="4">
+            <parent catalog="TEST 1" column="id" foreignKey="link fk" implied="false" onDeleteCascade="false" table="LINKS 1"/>
+         </column>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="PRIMARY" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+         <index name="link fk" unique="false">
+            <column ascending="true" name="link id"/>
+         </index>
+         <index name="name_link_unique" unique="true">
+            <column ascending="true" name="name"/>
+            <column ascending="true" name="link id"/>
+         </index>
+      </table>
+   </tables>
+</database>

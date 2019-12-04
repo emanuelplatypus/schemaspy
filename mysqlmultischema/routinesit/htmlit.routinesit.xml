@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<database name="htmlit" schema="routinesit" type="MySQL - 5.7.28">
+   <tables>
+      <table catalog="routinesit" name="issue222" numRows="0" remarks="Only to avoid issue 222" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="rid" nullable="false" remarks="" size="10" type="INT" typeCode="4"/>
+      </table>
+   </tables>
+   <routines>
+      <routine dataAccess="CONTAINS SQL" deterministic="false" name="no_det" returnType="char(50)" securityType="DEFINER" type="FUNCTION">
+         <comment/>
+         <definition language="SQL"/>
+      </routine>
+      <routine dataAccess="CONTAINS SQL" deterministic="true" name="yes_det" returnType="char(50)" securityType="DEFINER" type="FUNCTION">
+         <comment/>
+         <definition language="SQL"/>
+      </routine>
+   </routines>
+</database>
